@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" src="js/lib/jquery-1.8.0.min.js" ></script>
+		<script type="text/javascript" src="js/inputDefault.js" ></script>
+		<style>
+			input { display: block; }
+			::-webkit-input-placeholder {
+			}
+			input:-moz-placeholder {
+			}
+		</style>
+		
+		<script type="text/javascript">
+			$(function(){
+				$('input').inputDefault('proba', {focusColor: 'green', blurColor: 'brown'});
+			});
+		</script>
+	</head>
+	<body>
+		<input id="textSample" type="text" />
+		<input id="mailSample" type="email" />
+		<input id="searchSample" type="search" />
+		<input id="passSample" type="password" />
+		<input id="dateSample" type="datetime" />
+		<input id="urlSample" type="url" />
+	</body>
+</html>
